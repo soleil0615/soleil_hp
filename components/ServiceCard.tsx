@@ -35,7 +35,7 @@ export default function ServiceCard({ title, description, href, imageSrc, imageP
                 </Link>
             )}
             <div className="flex flex-1 flex-col p-6 sm:p-10">
-                <h3 className="text-xl font-bold leading-relaxed text-foreground font-serif tracking-wide sm:text-2xl">{title}</h3>
+                <h3 className="text-xl font-bold leading-relaxed text-foreground font-serif tracking-wide sm:text-2xl text-balance">{title}</h3>
                 <p className="mt-3 flex-auto text-sm leading-relaxed text-muted-foreground/90 font-light sm:text-base sm:mt-4">{description}</p>
                 <div className="mt-10">
                     <Link

@@ -22,12 +22,12 @@ export default function EduPage() {
                         <p className="text-edu-primary font-bold tracking-widest uppercase mb-4 text-[10px] sm:text-base">
                             組織戦略パートナー
                         </p>
-                        <h1 className="text-[4.2vw] xs:text-[4.8vw] sm:text-4xl md:text-5xl lg:text-[4.5vw] font-black tracking-tighter text-slate-900 font-serif mb-6 leading-tight whitespace-nowrap w-full text-center">
-                            点（個人）<span className="text-slate-300 mx-0.5 sm:mx-1">×</span>
-                            線（関係）<span className="text-slate-300 mx-0.5 sm:mx-1">×</span>
-                            <span className="text-edu-primary">面（組織文化）</span>
+                        <h1 className="text-[4.8vw] xs:text-[5vw] sm:text-4xl md:text-5xl lg:text-[4.5vw] font-black tracking-tighter text-slate-900 font-serif mb-6 leading-[1.3] w-full text-center px-2">
+                            <span className="inline-block">点（個人）</span><span className="text-slate-300 mx-0.5 sm:mx-1 sm:inline-block">×</span>
+                            <span className="inline-block">線（関係）</span><span className="text-slate-300 mx-0.5 sm:mx-1 sm:inline-block">×</span>
+                            <span className="text-edu-primary inline-block">面（組織文化）</span>
                         </h1>
-                        <p className="text-[3vw] xs:text-[3.5vw] sm:text-2xl lg:text-[2vw] text-slate-600 font-medium mb-10 leading-relaxed whitespace-nowrap">
+                        <p className="text-[3.5vw] xs:text-[4vw] sm:text-2xl lg:text-[2vw] text-slate-600 font-medium mb-10 leading-relaxed sm:whitespace-nowrap px-4 text-balance">
                             —— 組織の見えにくい「つながり」をデザインする ——
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -56,12 +56,12 @@ export default function EduPage() {
                 className="bg-slate-50"
             >
                 <div className="mx-auto max-w-4xl text-center mb-16">
-                    <p className="text-lg leading-9 text-slate-600 font-medium text-justify sm:text-center">
-                        組織は「人」がつくり、<br />
-                        「人の関係性」が文化を形づくります。<br />
-                        私たちは、個人・チーム・組織に流れる<br />
-                        “見えないつながり”を可視化し、<br />
-                        持続的に成長する組織づくりを支援します。
+                    <p className="text-lg leading-9 text-slate-600 font-medium text-center text-balance px-4">
+                        <span className="inline-block">組織は「人」がつくり、</span><br className="hidden md:block" />
+                        <span className="inline-block">「人の関係性」が文化を形づくります。</span><br className="hidden md:block" />
+                        <span className="inline-block">私たちは、個人・チーム・組織に流れる</span><br className="hidden md:block" />
+                        <span className="inline-block">“見えないつながり”を可視化し、</span><br className="hidden md:block" />
+                        <span className="inline-block">持続的に成長する組織づくりを支援します。</span>
                     </p>
                 </div>
 
@@ -114,27 +114,27 @@ export default function EduPage() {
                                 </h2>
                             </div>
 
-                            <div className="space-y-8 text-slate-600 leading-relaxed text-base sm:text-lg md:text-xl font-medium tracking-wide">
+                            <div className="space-y-8 text-slate-600 leading-relaxed text-base sm:text-lg md:text-xl font-medium tracking-wide text-balance">
                                 <p>
-                                    働く人が安心できて、<br />
-                                    自然体でいられる組織は、<br />
-                                    そのあたたかさがそのまま<br />
-                                    強さにつながっていきます。
+                                    <span className="inline-block">働く人が安心できて、</span><br className="hidden sm:block" />
+                                    <span className="inline-block">自然体でいられる組織は、</span><br className="hidden sm:block" />
+                                    <span className="inline-block">そのあたたかさがそのまま</span><br className="hidden sm:block" />
+                                    <span className="inline-block">強さにつながっていきます。</span>
                                 </p>
                                 <p>
-                                    私は、ひとりひとりの想いに<br />
-                                    耳を傾けながら、人と働く場を<br />
-                                    ていねいにつなぎ直す<br />
-                                    “関係性のデザイン”を<br />
-                                    大切にしています。
+                                    <span className="inline-block">私は、ひとりひとりの想いに</span><br className="hidden sm:block" />
+                                    <span className="inline-block">耳を傾けながら、</span><span className="inline-block">人と働く場を</span><br className="hidden sm:block" />
+                                    <span className="inline-block">ていねいにつなぎ直す</span><br className="hidden sm:block" />
+                                    <span className="inline-block">“関係性のデザイン”を</span><br className="hidden sm:block" />
+                                    <span className="inline-block">大切にしています。</span>
                                 </p>
                                 <p>
-                                    「うまく言葉にできないけれど、<br />
-                                    なんとなくモヤモヤする」<br />
-                                    そんな小さなサインにも<br />
-                                    寄り添いながら、<br />
-                                    組織に流れる空気を、<br />
-                                    ゆっくり整えていきます。
+                                    <span className="inline-block">「うまく言葉にできないけれど、</span><br className="hidden sm:block" />
+                                    <span className="inline-block">なんとなくモヤモヤする」</span><br className="hidden sm:block" />
+                                    <span className="inline-block">そんな小さなサインにも</span><br className="hidden sm:block" />
+                                    <span className="inline-block">寄り添いながら、</span><br className="hidden sm:block" />
+                                    <span className="inline-block">組織に流れる空気を、</span><br className="hidden sm:block" />
+                                    <span className="inline-block">ゆっくり整えていきます。</span>
                                 </p>
                             </div>
                         </div>

@@ -44,15 +44,15 @@ export default function Home() {
       <Section id="vision" background="muted" title="Vision" subtitle="みんなが「自律」した社会へ">
         <DecorativeBlob variant="secondary" className="top-0 left-0 -translate-x-1/2 -translate-y-1/2 w-[40rem] opacity-30" />
         <div className="mx-auto max-w-3xl text-center relative z-10">
-          <p className="text-lg leading-8 text-muted-foreground">
-            社会で大事なことは自分で考え行動すること。<br />
-            なぜなら社会には教育で求められてきた<br />
-            「答え」や「正解」はないからです。<br />
-            ル・ソレイユは誰かが教えてくれた答えに<br />
-            依存するのではなく、<br />
-            自分で決めたことを自分で守ることができる、<br />
-            自分らしくいられる子どもが<br />
-            一人でも多く育ってくれることを願っています。
+          <p className="text-lg leading-8 text-muted-foreground text-balance">
+            <span className="inline-block">社会で大事なことは</span><span className="inline-block">自分で考え行動すること。</span><br className="hidden md:block" />
+            <span className="inline-block">なぜなら社会には</span><span className="inline-block">教育で求められてきた</span><br className="hidden md:block" />
+            <span className="inline-block">「答え」や「正解」は</span><span className="inline-block">ないからです。</span><br className="hidden md:block" />
+            <span className="inline-block">ル・ソレイユは誰かが</span><span className="inline-block">教えてくれた答えに</span><br className="hidden md:block" />
+            <span className="inline-block">依存するのではなく、</span><br className="hidden md:block" />
+            <span className="inline-block">自分で決めたことを</span><span className="inline-block">自分で守ることができる、</span><br className="hidden md:block" />
+            <span className="inline-block">自分らしくいられる子どもが</span><br className="hidden md:block" />
+            <span className="inline-block">一人でも多く育ってくれることを</span><span className="inline-block">願っています。</span>
           </p>
         </div>
       </Section>
@@ -62,7 +62,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
 
           <ServiceCard
-            title={<><span className="inline-block">ロボット制作</span><span className="inline-block">プログラミング教室</span><br /><span className="inline-block">ロボ団高岡校</span></>}
+            title={<><span className="inline-block">ロボット制作・</span><span className="inline-block">プログラミング教室</span><br className="hidden sm:block" /><span className="inline-block">ロボ団高岡校</span></>}
             altText="ロボット制作プログラミング教室ロボ団高岡校"
             description="好奇心を学びに！ロボット制作とプログラミングを通じ、理数・ITに強い子どもの人材育成を目指します。"
             href="/robo-done"
