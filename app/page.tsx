@@ -10,6 +10,15 @@ import DecorativeBlob from "@/components/DecorativeBlob";
 import companyInterior from "../public/ソレイユ内観（イラスト）.png";
 import companyExterior from "../public/ソレイユ外観（イラスト）.png";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "株式会社ル・ソレイユ | 富山県高岡市の自律支援・プログラミング教室",
+  description: "富山県高岡市を拠点に、ロボット制作プログラミング教室「ロボ団高岡校」や人材育成コンサルティングを展開。働く女性と子どもの「自律」を応援し、共に歩むパートナーです。",
+  alternates: {
+    canonical: "/",
+  },
+};
 
 export default function Home() {
   return (
@@ -17,26 +26,73 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "株式会社ル・ソレイユ",
-            "url": "https://le-soleil0615.com",
-            "logo": "https://le-soleil0615.com/soleil-logo.jpg",
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "telephone": "",
-              "contactType": "customer service"
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "株式会社ル・ソレイユ",
+              "url": "https://le-soleil0615.com",
+              "logo": "https://le-soleil0615.com/soleil-logo.jpg",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "",
+                "contactType": "customer service"
+              },
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "御旅屋町1222 エルパセオ1階",
+                "addressLocality": "高岡市",
+                "addressRegion": "富山県",
+                "postalCode": "933-0029",
+                "addressCountry": "JP"
+              }
             },
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "御旅屋町1222 エルパセオ1階",
-              "addressLocality": "高岡市",
-              "addressRegion": "富山県",
-              "postalCode": "933-0029",
-              "addressCountry": "JP"
+            {
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "株式会社ル・ソレイユ",
+              "image": "https://le-soleil0615.com/soleil-logo.jpg",
+              "@id": "https://le-soleil0615.com",
+              "url": "https://le-soleil0615.com",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "御旅屋町1222 エルパセオ1階",
+                "addressLocality": "高岡市",
+                "addressRegion": "富山県",
+                "postalCode": "933-0029",
+                "addressCountry": "JP"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 36.7423,
+                "longitude": 137.0125
+              },
+              "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday"
+                ],
+                "opens": "09:00",
+                "closes": "18:00"
+              }
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "株式会社ル・ソレイユ",
+              "url": "https://le-soleil0615.com",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://le-soleil0615.com/news?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
             }
-          })
+          ])
         }}
       />
       <Hero />
@@ -71,6 +127,7 @@ export default function Home() {
           />
           <ServiceCard
             title="人材育成コンサルティング"
+            altText="人材育成コンサルティング・企業研修の様子"
             description="企業風土を整え、個々の能力を引き出し、チームとして目標達成していくサポートをしています。"
             href="/edu"
             imageSrc={trainingImage}
@@ -126,7 +183,7 @@ export default function Home() {
                   <div className="relative h-48 rounded-lg overflow-hidden shadow-sm border border-gray-100">
                     <Image
                       src={companyInterior}
-                      alt="社内風景"
+                      alt="株式会社ル・ソレイユの社内風景 - 明るく開放的な学びの空間"
                       fill
                       className="object-cover hover:scale-105 transition-transform duration-500"
                     />
@@ -134,7 +191,7 @@ export default function Home() {
                   <div className="relative h-48 rounded-lg overflow-hidden shadow-sm border border-gray-100">
                     <Image
                       src={companyExterior}
-                      alt="外観"
+                      alt="株式会社ル・ソレイユの外観 - 高岡市御旅屋町エルパセオ1階"
                       fill
                       className="object-cover hover:scale-105 transition-transform duration-500"
                     />

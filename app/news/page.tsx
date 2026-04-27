@@ -7,6 +7,13 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
     title: "お知らせ",
     description: "株式会社ル・ソレイユからの最新情報や、日々の活動の様子、イベント情報をお届けします。",
+    alternates: {
+        canonical: "/news",
+    },
+    openGraph: {
+        title: "お知らせ | 株式会社ル・ソレイユ",
+        description: "最新情報や日々の活動の様子をお届けします。",
+    },
 };
 
 export default function NewsPage() {

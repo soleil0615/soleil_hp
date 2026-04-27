@@ -10,6 +10,14 @@ export const metadata: Metadata = {
     title: "人材育成コンサルティング | 組織戦略パートナー",
     description: "点（個人）×線（関係）×面（組織文化）で組織の見えにくい「つながり」をデザインする。人的資本経営、組織文化変革、リーダー育成を支援します。",
     keywords: ["組織開発", "人的資本経営", "組織文化", "DEI", "1on1", "リーダー育成", "高岡市", "富山県"],
+    alternates: {
+        canonical: "/edu",
+    },
+    openGraph: {
+        title: "人材育成コンサルティング | 株式会社ル・ソレイユ",
+        description: "組織の見えにくい「つながり」をデザイン。人的資本経営、組織文化変革、リーダー育成を支援します。",
+        images: ["/corporate_training_scene.png"],
+    },
 };
 
 export default function EduPage() {
