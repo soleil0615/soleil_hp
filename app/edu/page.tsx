@@ -30,12 +30,14 @@ export default function EduPage() {
                         <p className="text-edu-primary font-bold tracking-widest uppercase mb-4 text-[10px] sm:text-base">
                             組織戦略パートナー
                         </p>
-                        <h1 className="text-[4.8vw] xs:text-[5vw] sm:text-4xl md:text-5xl lg:text-[4.5vw] font-black tracking-tighter text-slate-900 font-serif mb-6 leading-[1.3] w-full text-center px-2">
-                            <span className="inline-block">点（個人）</span><span className="text-slate-300 mx-0.5 sm:mx-1 sm:inline-block">×</span>
-                            <span className="inline-block">線（関係）</span><span className="text-slate-300 mx-0.5 sm:mx-1 sm:inline-block">×</span>
+                        <h1 className="text-[4.5vw] xs:text-[4.8vw] sm:text-3xl md:text-4xl lg:text-5xl font-black tracking-tighter text-slate-900 font-serif mb-8 leading-tight w-full text-center px-2 whitespace-nowrap">
+                            <span className="inline-block">点（個人）</span>
+                            <span className="text-edu-primary/30 mx-1 sm:mx-3 inline-block scale-75 sm:scale-100">×</span>
+                            <span className="inline-block">線（関係）</span>
+                            <span className="text-edu-primary/30 mx-1 sm:mx-3 inline-block scale-75 sm:scale-100">×</span>
                             <span className="text-edu-primary inline-block">面（組織文化）</span>
                         </h1>
-                        <p className="text-[3.5vw] xs:text-[4vw] sm:text-2xl lg:text-[2vw] text-slate-600 font-medium mb-10 leading-relaxed sm:whitespace-nowrap px-4 text-balance">
+                        <p className="text-[3.2vw] xs:text-[3.5vw] sm:text-2xl lg:text-[2vw] text-slate-600 font-medium mb-10 leading-relaxed whitespace-nowrap px-4 text-center tracking-tighter">
                             —— 組織の見えにくい「つながり」をデザインする ——
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
