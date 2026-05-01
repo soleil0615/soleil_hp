@@ -68,12 +68,12 @@ export default function EduPage() {
                 className="bg-slate-50"
             >
                 <div className="mx-auto max-w-4xl text-center mb-16">
-                    <p className="text-base sm:text-lg leading-8 sm:leading-9 text-slate-600 font-medium text-center px-4">
-                        <span className="inline-block">組織は「人」がつくり、</span><br />
-                        <span className="inline-block">「人の関係性」が</span><span className="inline-block">文化を形づくります。</span><br />
-                        <span className="inline-block">私たちは、個人・チーム・</span><span className="inline-block">組織に流れる</span><br />
-                        <span className="inline-block">“見えないつながり”を</span><span className="inline-block">可視化し、</span><br />
-                        <span className="inline-block">持続的に成長する</span><span className="inline-block">組織づくりを支援します。</span>
+                    <p className="text-[14px] xs:text-[15px] sm:text-lg leading-7 sm:leading-9 text-slate-600 font-medium text-center px-4 tracking-tight sm:tracking-normal">
+                        組織は「人」がつくり、<br />
+                        「人の関係性」が文化を形づくります。<br />
+                        私たちは、個人・チーム・組織に流れる<br />
+                        “見えないつながり”を可視化し、<br />
+                        持続的に成長する組織づくりを支援します。
                     </p>
                 </div>
 
