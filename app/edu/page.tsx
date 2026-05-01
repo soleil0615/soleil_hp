@@ -30,19 +30,17 @@ export default function EduPage() {
                         <p className="text-edu-primary font-bold tracking-widest uppercase mb-4 text-[10px] sm:text-base">
                             組織戦略パートナー
                         </p>
-                        <h1 className="text-[5.5vw] xs:text-[6vw] sm:text-3xl md:text-4xl lg:text-5xl font-black tracking-tighter text-slate-900 font-serif mb-8 leading-tight w-full text-center px-2">
+                        <h1 className="text-[6.5vw] xs:text-[7vw] sm:text-3xl md:text-4xl lg:text-5xl font-black tracking-tighter text-slate-900 font-serif mb-8 leading-tight w-full text-center px-2">
                             <span className="inline-block">点（個人）</span>
-                            <span className="text-edu-primary/30 mx-1 sm:mx-3 inline-block scale-75 sm:scale-100">×</span>
-                            <span className="inline-block">線（関係）</span>
-                            <br className="block sm:hidden mt-2" />
                             <span className="text-edu-primary/30 mx-1 sm:mx-3 hidden sm:inline-block scale-75 sm:scale-100">×</span>
-                            <span className="text-edu-primary/30 mr-1 inline-block scale-75 sm:hidden">×</span>
+                            <div className="sm:hidden text-edu-primary/30 my-1 scale-75 leading-none">×</div>
+                            <span className="inline-block">線（関係）</span>
+                            <span className="text-edu-primary/30 mx-1 sm:mx-3 hidden sm:inline-block scale-75 sm:scale-100">×</span>
+                            <div className="sm:hidden text-edu-primary/30 my-1 scale-75 leading-none">×</div>
                             <span className="text-edu-primary inline-block">面（組織文化）</span>
                         </h1>
-                        <p className="text-sm xs:text-base sm:text-2xl lg:text-[2vw] text-slate-600 font-medium mb-10 leading-relaxed px-4 text-center tracking-tighter">
-                            <span className="inline-block">—— 組織の見えにくい</span>
-                            <br className="block sm:hidden" />
-                            <span className="inline-block">「つながり」をデザインする ——</span>
+                        <p className="text-[3.5vw] xs:text-[3.8vw] sm:text-2xl lg:text-[2vw] text-slate-600 font-medium mb-10 leading-relaxed whitespace-nowrap px-4 text-center tracking-tighter">
+                            —— 組織の見えにくい「つながり」をデザインする ——
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                             <Link
@@ -70,12 +68,12 @@ export default function EduPage() {
                 className="bg-slate-50"
             >
                 <div className="mx-auto max-w-4xl text-center mb-16">
-                    <p className="text-base sm:text-lg leading-8 sm:leading-9 text-slate-600 font-medium text-center text-balance px-4">
+                    <p className="text-base sm:text-lg leading-8 sm:leading-9 text-slate-600 font-medium text-center px-4">
                         <span className="inline-block">組織は「人」がつくり、</span><br />
-                        <span className="inline-block">「人の関係性」が文化を形づくります。</span><br />
-                        <span className="inline-block">私たちは、個人・チーム・組織に流れる</span><br />
-                        <span className="inline-block">“見えないつながり”を可視化し、</span><br />
-                        <span className="inline-block">持続的に成長する</span><br className="sm:hidden" /><span className="inline-block">組織づくりを支援します。</span>
+                        <span className="inline-block">「人の関係性」が</span><span className="inline-block">文化を形づくります。</span><br />
+                        <span className="inline-block">私たちは、個人・チーム・</span><span className="inline-block">組織に流れる</span><br />
+                        <span className="inline-block">“見えないつながり”を</span><span className="inline-block">可視化し、</span><br />
+                        <span className="inline-block">持続的に成長する</span><span className="inline-block">組織づくりを支援します。</span>
                     </p>
                 </div>
 
@@ -137,7 +135,7 @@ export default function EduPage() {
                                 </p>
                                 <p>
                                     <span className="inline-block">私は、ひとりひとりの想いに</span><br />
-                                    <span className="inline-block">耳を傾けながら、</span><br className="sm:hidden" /><span className="inline-block">人と働く場を</span><br />
+                                    <span className="inline-block">耳を傾けながら、</span><span className="inline-block">人と働く場を</span><br />
                                     <span className="inline-block">ていねいにつなぎ直す</span><br />
                                     <span className="inline-block">“関係性のデザイン”を</span><br />
                                     <span className="inline-block">大切にしています。</span>
