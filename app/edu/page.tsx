@@ -95,9 +95,9 @@ export default function EduPage() {
                             color: "bg-rose-50 border-rose-100 text-rose-600"
                         }
                     ].map((item, i) => (
-                        <div key={i} className={`p-8 rounded-3xl border ${item.color.replace("text-", "border-").replace("bg-", "border-opacity-50 ")} bg-white shadow-sm hover:shadow-md transition-all`}>
-                            <h3 className={`text-xl font-bold mb-4 ${item.color.split(" ").pop()}`}>{item.title}</h3>
-                            <p className="text-slate-600 leading-relaxed font-medium">
+                        <div key={i} className={`p-6 sm:p-8 rounded-3xl border ${item.color.replace("text-", "border-").replace("bg-", "border-opacity-50 ")} bg-white shadow-sm hover:shadow-md transition-all`}>
+                            <h3 className={`text-lg sm:text-xl font-bold mb-3 sm:mb-4 ${item.color.split(" ").pop()}`}>{item.title}</h3>
+                            <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-medium">
                                 {item.desc}
                             </p>
                         </div>
