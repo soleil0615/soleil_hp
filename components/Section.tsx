@@ -13,7 +13,7 @@ export default function Section({ id, className, children, title, subtitle, back
     return (
         <section
             id={id}
-            className={clsx("relative py-16 sm:py-32", className)}
+            className={clsx("relative py-16 sm:py-32 overflow-hidden", className)}
         >
             {background !== "default" && (
                 <div
