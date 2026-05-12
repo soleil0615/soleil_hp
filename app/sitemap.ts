@@ -1,13 +1,7 @@
 import { MetadataRoute } from "next";
-import { posts } from "@/lib/posts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = "https://le-soleil0615.com";
-
-    const newsEntries = posts.map((post) => ({
-        url: `${baseUrl}/news/${post.slug}`,
-        lastModified: new Date(post.date),
-    }));
 
     return [
         {
@@ -28,12 +22,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: "monthly",
             priority: 0.7,
         },
-        {
-            url: `${baseUrl}/news`,
-            lastModified: new Date(),
-            changeFrequency: "daily",
-            priority: 0.6,
-        },
-        ...newsEntries,
     ];
 }

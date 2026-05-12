@@ -1,7 +1,6 @@
 import Hero from "@/components/Hero";
 import Section from "@/components/Section";
 import ServiceCard from "@/components/ServiceCard";
-import NewsSection from "@/components/NewsSection";
 import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
 import roboImage from "../public/S__2080777.jpg";
@@ -85,12 +84,7 @@ export default function Home() {
               "@context": "https://schema.org",
               "@type": "WebSite",
               "name": "株式会社ル・ソレイユ",
-              "url": "https://le-soleil0615.com",
-              "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://le-soleil0615.com/news?q={search_term_string}",
-                "query-input": "required name=search_term_string"
-              }
+              "url": "https://le-soleil0615.com"
             }
           ])
         }}
@@ -134,10 +128,6 @@ export default function Home() {
             imagePosition="object-[50%_25%]"
           />
         </div>
-      </Section>
-
-      <Section id="news" background="accent">
-        <NewsSection />
       </Section>
 
       <Section id="company" title="Company" subtitle="会社概要">
