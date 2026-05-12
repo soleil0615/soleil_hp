@@ -7,9 +7,12 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div>
                         <h3 className="text-lg font-serif font-bold text-primary mb-4">株式会社 ル・ソレイユ</h3>
-                        <p className="text-sm leading-6 text-muted-foreground">
+                        <p className="text-sm leading-6 text-muted-foreground mb-4">
                             〒933-0029<br />
                             富山県高岡市御旅屋町1222 エルパセオ1階
+                        </p>
+                        <p className="text-sm leading-6 text-muted-foreground">
+                            TEL: <a href="tel:0766-75-8314" className="hover:text-primary transition-colors">0766-75-8314</a>
                         </p>
                     </div>
                     <div>

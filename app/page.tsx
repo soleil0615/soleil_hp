@@ -34,7 +34,7 @@ export default function Home() {
               "logo": "https://le-soleil0615.com/soleil-logo.jpg",
               "contactPoint": {
                 "@type": "ContactPoint",
-                "telephone": "",
+                "telephone": "+81-766-75-8314",
                 "contactType": "customer service"
               },
               "address": {
@@ -141,6 +141,12 @@ export default function Home() {
             <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
               <dt className="text-sm font-medium leading-6 text-foreground">所在地</dt>
               <dd className="mt-1 text-sm leading-6 text-muted-foreground sm:col-span-2 sm:mt-0">〒933-0029 富山県高岡市御旅屋町1222 エルパセオ1階</dd>
+            </div>
+            <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+              <dt className="text-sm font-medium leading-6 text-foreground">電話番号</dt>
+              <dd className="mt-1 text-sm leading-6 text-muted-foreground sm:col-span-2 sm:mt-0">
+                <a href="tel:0766-75-8314" className="hover:text-primary transition-colors">0766-75-8314</a>
+              </dd>
             </div>
             <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
               <dt className="text-sm font-medium leading-6 text-foreground">事業内容</dt>
