@@ -77,8 +77,7 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;700&display=swap" rel="stylesheet" />
       </head>
       <body
-        className="antialiased min-h-screen flex flex-col"
-
+        className="antialiased min-h-screen flex flex-col overflow-x-hidden"
       >
         <Header />
         <main className="flex-grow">
