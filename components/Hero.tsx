@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import FadeIn from "@/components/FadeIn";
+
 export default function Hero() {
     return (
         <div className="relative isolate overflow-hidden pt-14">
@@ -14,7 +16,7 @@ export default function Hero() {
             </div>
 
             <div className="relative mx-auto max-w-7xl px-6 py-20 sm:py-48 lg:py-56 flex flex-col items-center justify-center min-h-[80vh] z-10">
-                <div className="text-center w-full max-w-3xl">
+                <FadeIn delay={0.2} className="text-center w-full max-w-3xl">
                     <h1 className="text-3xl font-bold tracking-[0.05em] text-foreground sm:text-6xl sm:tracking-[0.12em] font-serif text-balance leading-[1.4] sm:leading-[1.2]">
                         <span className="inline-block">働く女性</span><span className="hidden sm:inline">　</span><br className="sm:hidden" /><span className="inline-block">育ち盛りの子どもの</span><br className="hidden sm:block" /><span className="inline-block">「自律」を応援します</span>
                     </h1>
@@ -31,7 +33,7 @@ export default function Hero() {
                             お問い合わせ
                         </Link>
                     </div>
-                </div>
+                </FadeIn>
             </div>
 
             <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">

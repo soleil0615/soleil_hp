@@ -10,6 +10,7 @@ import companyInterior from "../public/ソレイユ内観（イラスト）.png"
 import companyExterior from "../public/ソレイユ外観（イラスト）.png";
 import Image from "next/image";
 import { Metadata } from "next";
+import FadeIn from "@/components/FadeIn";
 
 export const metadata: Metadata = {
   title: "株式会社ル・ソレイユ | 富山県高岡市の自律支援・プログラミング教室",
@@ -93,119 +94,127 @@ export default function Home() {
 
       <Section id="vision" background="muted" title="Vision" subtitle="みんなが「自律」した社会へ">
         <DecorativeBlob variant="secondary" className="top-0 left-0 -translate-x-1/2 -translate-y-1/2 w-[40rem] opacity-30" />
-        <div className="mx-auto max-w-3xl text-center relative z-10">
-          <p className="text-lg leading-8 text-muted-foreground text-balance">
-            <span className="inline-block">社会で大事なことは</span><span className="inline-block">自分で考え行動すること。</span><br className="hidden md:block" />
-            <span className="inline-block">なぜなら社会には</span><span className="inline-block">教育で求められてきた</span><br className="hidden md:block" />
-            <span className="inline-block">「答え」や「正解」は</span><span className="inline-block">ないからです。</span><br className="hidden md:block" />
-            <span className="inline-block">ル・ソレイユは誰かが</span><span className="inline-block">教えてくれた答えに</span><br className="hidden md:block" />
-            <span className="inline-block">依存するのではなく、</span><br className="hidden md:block" />
-            <span className="inline-block">自分で決めたことを</span><span className="inline-block">自分で守ることができる、</span><br className="hidden md:block" />
-            <span className="inline-block">自分らしくいられる子どもが</span><br className="hidden md:block" />
-            <span className="inline-block">一人でも多く育ってくれることを</span><span className="inline-block">願っています。</span>
-          </p>
-        </div>
+        <FadeIn delay={0.2}>
+          <div className="mx-auto max-w-3xl text-center relative z-10">
+            <p className="text-lg leading-8 text-muted-foreground text-balance">
+              <span className="inline-block">社会で大事なことは</span><span className="inline-block">自分で考え行動すること。</span><br className="hidden md:block" />
+              <span className="inline-block">なぜなら社会には</span><span className="inline-block">教育で求められてきた</span><br className="hidden md:block" />
+              <span className="inline-block">「答え」や「正解」は</span><span className="inline-block">ないからです。</span><br className="hidden md:block" />
+              <span className="inline-block">ル・ソレイユは誰かが</span><span className="inline-block">教えてくれた答えに</span><br className="hidden md:block" />
+              <span className="inline-block">依存するのではなく、</span><br className="hidden md:block" />
+              <span className="inline-block">自分で決めたことを</span><span className="inline-block">自分で守ることができる、</span><br className="hidden md:block" />
+              <span className="inline-block">自分らしくいられる子どもが</span><br className="hidden md:block" />
+              <span className="inline-block">一人でも多く育ってくれることを</span><span className="inline-block">願っています。</span>
+            </p>
+          </div>
+        </FadeIn>
       </Section>
 
       <Section id="service" title="Service" subtitle="事業内容">
         <DecorativeBlob variant="primary" className="bottom-0 right-0 translate-x-1/3 translate-y-1/3 w-[50rem] opacity-20" />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
+        <FadeIn delay={0.2}>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
 
-          <ServiceCard
-            title={<><span className="inline-block">ロボット制作・</span><span className="inline-block">プログラミング教室</span><br className="hidden sm:block" /><span className="inline-block">ロボ団高岡校</span></>}
-            altText="ロボット制作プログラミング教室ロボ団高岡校"
-            description="好奇心を学びに！ロボット制作とプログラミングを通じ、理数・ITに強い子どもの人材育成を目指します。"
-            href="/robo-done"
-            imageSrc={roboImage}
-            imagePosition="object-top"
-          />
-          <ServiceCard
-            title="人材育成コンサルティング"
-            altText="人材育成コンサルティング・企業研修の様子"
-            description="企業風土を整え、個々の能力を引き出し、チームとして目標達成していくサポートをしています。"
-            href="/edu"
-            imageSrc={trainingImage}
-            imagePosition="object-[50%_25%]"
-          />
-        </div>
+            <ServiceCard
+              title={<><span className="inline-block">ロボット制作・</span><span className="inline-block">プログラミング教室</span><br className="hidden sm:block" /><span className="inline-block">ロボ団高岡校</span></>}
+              altText="ロボット制作プログラミング教室ロボ団高岡校"
+              description="好奇心を学びに！ロボット制作とプログラミングを通じ、理数・ITに強い子どもの人材育成を目指します。"
+              href="/robo-done"
+              imageSrc={roboImage}
+              imagePosition="object-top"
+            />
+            <ServiceCard
+              title="人材育成コンサルティング"
+              altText="人材育成コンサルティング・企業研修の様子"
+              description="企業風土を整え、個々の能力を引き出し、チームとして目標達成していくサポートをしています。"
+              href="/edu"
+              imageSrc={trainingImage}
+              imagePosition="object-[50%_25%]"
+            />
+          </div>
+        </FadeIn>
       </Section>
 
       <Section id="company" title="Company" subtitle="会社概要">
         <DecorativeBlob variant="accent" className="top-1/2 left-0 -translate-x-1/2 -translate-y-1/2 w-[40rem] opacity-30" />
-        <div className="mx-auto max-w-3xl bg-white p-8 rounded-2xl shadow-sm ring-1 ring-gray-900/5 relative z-10">
-          <dl className="divide-y divide-gray-100">
-            <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-              <dt className="text-sm font-medium leading-6 text-foreground">会社名</dt>
-              <dd className="mt-1 text-sm leading-6 text-muted-foreground sm:col-span-2 sm:mt-0">株式会社 ル・ソレイユ</dd>
-            </div>
-            <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-              <dt className="text-sm font-medium leading-6 text-foreground">所在地</dt>
-              <dd className="mt-1 text-sm leading-6 text-muted-foreground sm:col-span-2 sm:mt-0">〒933-0029 富山県高岡市御旅屋町1222 エルパセオ1階</dd>
-            </div>
-            <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-              <dt className="text-sm font-medium leading-6 text-foreground">電話番号</dt>
-              <dd className="mt-1 text-sm leading-6 text-muted-foreground sm:col-span-2 sm:mt-0">
-                <a href="tel:0766-75-8314" className="hover:text-primary transition-colors">0766-75-8314</a>
-              </dd>
-            </div>
-            <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-              <dt className="text-sm font-medium leading-6 text-foreground">事業内容</dt>
-              <dd className="mt-1 text-sm leading-6 text-muted-foreground sm:col-span-2 sm:mt-0">
+        <FadeIn delay={0.2}>
+          <div className="mx-auto max-w-3xl bg-white p-8 rounded-2xl shadow-sm ring-1 ring-gray-900/5 relative z-10">
+            <dl className="divide-y divide-gray-100">
+              <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <dt className="text-sm font-medium leading-6 text-foreground">会社名</dt>
+                <dd className="mt-1 text-sm leading-6 text-muted-foreground sm:col-span-2 sm:mt-0">株式会社 ル・ソレイユ</dd>
+              </div>
+              <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <dt className="text-sm font-medium leading-6 text-foreground">所在地</dt>
+                <dd className="mt-1 text-sm leading-6 text-muted-foreground sm:col-span-2 sm:mt-0">〒933-0029 富山県高岡市御旅屋町1222 エルパセオ1階</dd>
+              </div>
+              <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <dt className="text-sm font-medium leading-6 text-foreground">電話番号</dt>
+                <dd className="mt-1 text-sm leading-6 text-muted-foreground sm:col-span-2 sm:mt-0">
+                  <a href="tel:0766-75-8314" className="hover:text-primary transition-colors">0766-75-8314</a>
+                </dd>
+              </div>
+              <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <dt className="text-sm font-medium leading-6 text-foreground">事業内容</dt>
+                <dd className="mt-1 text-sm leading-6 text-muted-foreground sm:col-span-2 sm:mt-0">
 
-                ロボット制作プログラミング教室ロボ団高岡校<br />
-                人材育成コンサルティング
-              </dd>
-            </div>
-            <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-              <dt className="text-sm font-medium leading-6 text-foreground">アクセス</dt>
-              <dd className="mt-1 text-sm leading-6 text-muted-foreground sm:col-span-2 sm:mt-0">
-                <div className="w-full h-64 rounded-lg overflow-hidden shadow-sm border border-gray-200">
-                  <iframe
-                    src="https://maps.google.com/maps?q=%E5%AF%8C%E5%B1%B1%E7%9C%8C%E9%AB%98%E5%B2%A1%E5%B8%82%E5%BE%A1%E6%97%85%E5%B1%8B%E7%94%BA1222+%E3%82%A8%E3%83%AB%E3%83%91%E3%82%BB%E3%82%AA&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                  ></iframe>
-                </div>
-              </dd>
-            </div>
-            <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-              <dt className="text-sm font-medium leading-6 text-foreground">ギャラリー</dt>
-              <dd className="mt-1 text-sm leading-6 text-muted-foreground sm:col-span-2 sm:mt-0">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="relative h-48 rounded-lg overflow-hidden shadow-sm border border-gray-100">
-                    <Image
-                      src={companyInterior}
-                      alt="株式会社ル・ソレイユの社内風景 - 明るく開放的な学びの空間"
-                      fill
-                      className="object-cover hover:scale-105 transition-transform duration-500"
-                    />
+                  ロボット制作プログラミング教室ロボ団高岡校<br />
+                  人材育成コンサルティング
+                </dd>
+              </div>
+              <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <dt className="text-sm font-medium leading-6 text-foreground">アクセス</dt>
+                <dd className="mt-1 text-sm leading-6 text-muted-foreground sm:col-span-2 sm:mt-0">
+                  <div className="w-full h-64 rounded-lg overflow-hidden shadow-sm border border-gray-200">
+                    <iframe
+                      src="https://maps.google.com/maps?q=%E5%AF%8C%E5%B1%B1%E7%9C%8C%E9%AB%98%E5%B2%A1%E5%B8%82%E5%BE%A1%E6%97%85%E5%B1%8B%E7%94%BA1222+%E3%82%A8%E3%83%AB%E3%83%91%E3%82%BB%E3%82%AA&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                    ></iframe>
                   </div>
-                  <div className="relative h-48 rounded-lg overflow-hidden shadow-sm border border-gray-100">
-                    <Image
-                      src={companyExterior}
-                      alt="株式会社ル・ソレイユの外観 - 高岡市御旅屋町エルパセオ1階"
-                      fill
-                      className="object-cover hover:scale-105 transition-transform duration-500"
-                    />
+                </dd>
+              </div>
+              <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <dt className="text-sm font-medium leading-6 text-foreground">ギャラリー</dt>
+                <dd className="mt-1 text-sm leading-6 text-muted-foreground sm:col-span-2 sm:mt-0">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="relative h-48 rounded-lg overflow-hidden shadow-sm border border-gray-100">
+                      <Image
+                        src={companyInterior}
+                        alt="株式会社ル・ソレイユの社内風景 - 明るく開放的な学びの空間"
+                        fill
+                        className="object-cover hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                    <div className="relative h-48 rounded-lg overflow-hidden shadow-sm border border-gray-100">
+                      <Image
+                        src={companyExterior}
+                        alt="株式会社ル・ソレイユの外観 - 高岡市御旅屋町エルパセオ1階"
+                        fill
+                        className="object-cover hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
                   </div>
-                </div>
-              </dd>
-            </div>
-          </dl>
-        </div>
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </FadeIn>
       </Section>
 
       <Section id="contact" background="muted" title="Contact" subtitle="お問い合わせ">
-        <div className="mx-auto max-w-3xl text-center mb-10">
-          <p className="text-lg leading-8 text-muted-foreground">
-            サービスに関するご質問やご相談など、お気軽にお問い合わせください。
-          </p>
-        </div>
-        <ContactForm />
+        <FadeIn delay={0.2}>
+          <div className="mx-auto max-w-3xl text-center mb-10">
+            <p className="text-lg leading-8 text-muted-foreground">
+              サービスに関するご質問やご相談など、お気軽にお問い合わせください。
+            </p>
+          </div>
+          <ContactForm />
+        </FadeIn>
       </Section>
     </div>
   );

@@ -1,4 +1,5 @@
 import { clsx } from "clsx";
+import FadeIn from "@/components/FadeIn";
 
 interface SectionProps {
     id?: string;
@@ -29,10 +30,12 @@ export default function Section({ id, className, children, title, subtitle, back
             )}
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 {(title || subtitle) && (
-                    <div className="mx-auto text-center mb-10 sm:mb-16">
-                        {title && <h2 className="text-2xl font-bold tracking-widest text-foreground sm:text-4xl font-serif">{title}</h2>}
-                        {subtitle && <p className="mt-3 text-base leading-relaxed text-muted-foreground/80 font-light sm:text-lg sm:mt-4">{subtitle}</p>}
-                    </div>
+                    <FadeIn delay={0.1}>
+                        <div className="mx-auto text-center mb-10 sm:mb-16">
+                            {title && <h2 className="text-2xl font-bold tracking-widest text-foreground sm:text-4xl font-serif">{title}</h2>}
+                            {subtitle && <p className="mt-3 text-base leading-relaxed text-muted-foreground/80 font-light sm:text-lg sm:mt-4">{subtitle}</p>}
+                        </div>
+                    </FadeIn>
                 )}
                 {children}
             </div>
