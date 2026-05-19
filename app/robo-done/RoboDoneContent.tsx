@@ -72,16 +72,16 @@ export default function RoboDoneContent() {
                         className="text-lg leading-8 text-slate-600 space-y-6"
                     >
                         <p className="border-l-4 border-blue-500 pl-6 py-2 bg-blue-50/50 rounded-r-2xl font-bold text-slate-700 leading-relaxed">
-                            ロボ団は、ロボット制作と<br />
-                            プログラミングを通じて、<br />
-                            理数・ITに強い子どもたちを育てる<br />
-                            エデュテインメント・スクールです。
+                            <span className="inline-block">ロボ団は、ロボット制作と</span><br className="hidden sm:inline" />
+                            <span className="inline-block">プログラミングを通じて、</span><br className="hidden sm:inline" />
+                            <span className="inline-block">理数・ITに強い子どもたちを育てる</span><br className="hidden sm:inline" />
+                            <span className="inline-block">エデュテインメント・スクールです。</span>
                         </p>
                         <p className="text-base text-center leading-loose">
-                            「好き」という純粋な好奇心を<br />
-                            「科学的な探究心」へと昇華させ、<br />
-                            論理的思考力、問題解決能力、そして自分のアイデアを<br />
-                            具現化する力を養います。
+                            <span className="inline-block">「好き」という純粋な好奇心を</span><br className="hidden sm:inline" />
+                            <span className="inline-block">「科学的な探究心」へと昇華させ、</span><br className="hidden sm:inline" />
+                            <span className="inline-block">論理的思考力、問題解決能力、</span><span className="inline-block">そして自分のアイデアを</span><br className="hidden sm:inline" />
+                            <span className="inline-block">具現化する力を養います。</span>
                         </p>
                     </motion.div>
                     <motion.div
@@ -120,7 +120,7 @@ export default function RoboDoneContent() {
                                 icon: Heart,
                                 color: "bg-blue-50",
                                 iconColor: "text-blue-600",
-                                content: <>子どもたち自身の「好き」が「学び」に変わる。<br />学びが活きる「社会」に触れ、<br />「学ぶ理由」に気づき、<br />自分で未来を切り拓いていく。<br />トライ＆エラーを繰り返しながら、<br />あきらめずにやり抜く力を。<br />そういう姿が、いま正に社会で<br />求められている人材ではないでしょうか。</>
+                                content: <><span className="inline-block">子どもたち自身の「好き」が「学び」に変わる。</span><br className="hidden sm:inline" /><span className="inline-block">学びが活きる「社会」に触れ、</span><br className="hidden sm:inline" /><span className="inline-block">「学ぶ理由」に気づき、</span><br className="hidden sm:inline" /><span className="inline-block">自分で未来を切り拓いていく。</span><br className="hidden sm:inline" /><span className="inline-block">トライ＆エラーを繰り返しながら、</span><br className="hidden sm:inline" /><span className="inline-block">あきらめずにやり抜く力を。</span><br className="hidden sm:inline" /><span className="inline-block">そういう姿が、いま正に社会で</span><br className="hidden sm:inline" /><span className="inline-block">求められている人材ではないでしょうか。</span></>
                             },
                             {
                                 id: "02",
@@ -128,7 +128,7 @@ export default function RoboDoneContent() {
                                 icon: Zap,
                                 color: "bg-indigo-50",
                                 iconColor: "text-indigo-600",
-                                content: <>従来の文系・理系の一方に偏るのではなく、<br />両方の素養を持つ人材の育成が求められています。<br />ロボ団では、理数教育を通じて理数系に強い<br />子どもを育てるだけでなく、社会へ出ても通用する<br />「やりきるチカラ」を育んでいきます。</>
+                                content: <><span className="inline-block">従来の文系・理系の一方に偏るのではなく、</span><br className="hidden sm:inline" /><span className="inline-block">両方の素養を持つ人材の育成が求められています。</span><br className="hidden sm:inline" /><span className="inline-block">ロボ団では、理数教育を通じて理数系に強い</span><br className="hidden sm:inline" /><span className="inline-block">子どもを育てるだけでなく、社会へ出ても通用する</span><br className="hidden sm:inline" /><span className="inline-block">「やりきるチカラ」を育んでいきます。</span></>
                             },
                             {
                                 id: "03",
@@ -136,7 +136,7 @@ export default function RoboDoneContent() {
                                 icon: Code2,
                                 color: "bg-emerald-50",
                                 iconColor: "text-emerald-600",
-                                content: <>子どもたちに人気のLEGOを使ってロボットを制作。<br />自分で作ったロボットが自分で考えた<br />プログラミングで動くと、子どもたちは大興奮！<br />楽しみながらプログラミング的思考を<br />身につけることができます。</>
+                                content: <><span className="inline-block">子どもたちに人気のLEGOを使ってロボットを制作。</span><br className="hidden sm:inline" /><span className="inline-block">自分で作ったロボットが自分で考えた</span><br className="hidden sm:inline" /><span className="inline-block">プログラミングで動くと、子どもたちは大興奮！</span><br className="hidden sm:inline" /><span className="inline-block">楽しみながらプログラミング的思考を</span><br className="hidden sm:inline" /><span className="inline-block">身につけることができます。</span></>
                             },
                             {
                                 id: "04",
@@ -144,7 +144,7 @@ export default function RoboDoneContent() {
                                 icon: Boxes,
                                 color: "bg-orange-50",
                                 iconColor: "text-orange-600",
-                                content: <>ロボ団ではレッスンの度に<br />新しいプログラミングに挑戦。<br />「考えることが楽しい！」<br />仲間の発言から新しい気づきが<br />生まれてくるのも魅力のひとつ。<br />話すのが苦手だった子も、どんどん自分から<br />発言をしたくなるレッスンなのです。</>
+                                content: <><span className="inline-block">ロボ団ではレッスンの度に</span><br className="hidden sm:inline" /><span className="inline-block">新しいプログラミングに挑戦。</span><br className="hidden sm:inline" /><span className="inline-block">「考えることが楽しい！」</span><br className="hidden sm:inline" /><span className="inline-block">仲間の発言から新しい気づきが</span><br className="hidden sm:inline" /><span className="inline-block">生まれてくるのも魅力のひとつ。</span><br className="hidden sm:inline" /><span className="inline-block">話すのが苦手だった子も、どんどん自分から</span><br className="hidden sm:inline" /><span className="inline-block">発言をしたくなるレッスンなのです。</span></>
                             },
                             {
                                 id: "05",
@@ -152,7 +152,7 @@ export default function RoboDoneContent() {
                                 icon: Users,
                                 color: "bg-rose-50",
                                 iconColor: "text-rose-600",
-                                content: <>高岡校では、イベントの企画や体験会のアイデアを、<br />子どもたちと一緒に考えています。<br />子どもたちが主体となって<br />地域のみなさんに伝える姿は、<br />とても頼もしく感じます。<br />社会の役に立っている。と子どもたちが<br />感じてもらえる経験を大切にしています。</>
+                                content: <><span className="inline-block">高岡校では、イベントの企画や体験会のアイデアを、</span><br className="hidden sm:inline" /><span className="inline-block">子どもたちと一緒に考えています。</span><br className="hidden sm:inline" /><span className="inline-block">子どもたちが主体となって</span><br className="hidden sm:inline" /><span className="inline-block">地域のみなさんに伝える姿は、</span><br className="hidden sm:inline" /><span className="inline-block">とても頼もしく感じます。</span><br className="hidden sm:inline" /><span className="inline-block">社会の役に立っている。と子どもたちが</span><br className="hidden sm:inline" /><span className="inline-block">感じてもらえる経験を大切にしています。</span></>
                             }
                         ].map((point, i) => (
                             <motion.div
@@ -439,11 +439,11 @@ export default function RoboDoneContent() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
                         <div className="space-y-10">
                             <h3 className="text-4xl font-black text-slate-900 leading-tight">
-                                プログラミングの<br />
-                                未来を体感しよう
+                                <span className="inline-block">プログラミングの</span><br className="hidden sm:inline" />
+                                <span className="inline-block">未来を体感しよう</span>
                             </h3>
                             <p className="text-slate-600 leading-relaxed text-lg">
-                                ロボ団では、入会前に授業内容をじっくり体験できる特別セッションをご用意しています。
+                                <span className="inline-block">ロボ団では、入会前に授業内容を</span><span className="inline-block">じっくり体験できる特別セッションを</span><span className="inline-block">ご用意しています。</span>
                             </p>
                             <div className="space-y-4">
                                 {[
