@@ -37,14 +37,14 @@ export default function RoboDoneContent() {
                     <FloatingCircuit className="bottom-20 right-[15%] text-indigo-400" size={150} delay={2} />
                 </div>
 
-                <div className="mx-auto max-w-7xl px-6 lg:px-8 relative">
+                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                         className="mx-auto max-w-2xl text-center"
                     >
-                        <TechBadge className="mb-6 sm:mb-8 px-3 sm:px-6 py-1.5 sm:py-2 text-[8.5px] sm:text-xs tracking-tighter sm:tracking-widest whitespace-nowrap justify-center">
+                        <TechBadge className="mb-6 sm:mb-8 px-2 sm:px-6 py-1.5 sm:py-2 text-[2.7vw] sm:text-xs tracking-tighter sm:tracking-widest whitespace-nowrap justify-center">
                             月9800円〜はじめるLEGOロボット制作×プログラミング教室
                         </TechBadge>
                         <h1 className="text-6xl font-black tracking-tight text-slate-900 sm:text-8xl mb-10 font-serif leading-[1.1]">
