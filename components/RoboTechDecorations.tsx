@@ -45,7 +45,7 @@ export const GlowOrb = ({ className = "", color = "bg-blue-500", size = "w-64 h-
 );
 
 export const TechBadge = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => (
-    <div className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-600 text-[10px] font-bold tracking-widest uppercase mb-6 backdrop-blur-md ${className}`}>
+    <div className={`inline-flex items-center gap-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-600 font-bold uppercase backdrop-blur-md ${className}`}>
         <span className="relative flex h-2 w-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
