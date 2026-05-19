@@ -116,7 +116,7 @@ export default function RoboDoneContent() {
                         {[
                             {
                                 id: "01",
-                                title: "好きを学びに、社会とつながる",
+                                title: <>好きを学びに、<br />社会とつながる</>,
                                 icon: Heart,
                                 color: "bg-blue-50",
                                 iconColor: "text-blue-600",
@@ -124,7 +124,7 @@ export default function RoboDoneContent() {
                             },
                             {
                                 id: "02",
-                                title: "「やりきるチカラ」が育みます",
+                                title: <>「やりきるチカラ」が<br />育みます</>,
                                 icon: Zap,
                                 color: "bg-indigo-50",
                                 iconColor: "text-indigo-600",
@@ -132,7 +132,7 @@ export default function RoboDoneContent() {
                             },
                             {
                                 id: "03",
-                                title: "社会で活用されているプログラミングを楽しむ",
+                                title: <>社会で活用されている<br />プログラミングを楽しむ</>,
                                 icon: Code2,
                                 color: "bg-emerald-50",
                                 iconColor: "text-emerald-600",
@@ -140,7 +140,7 @@ export default function RoboDoneContent() {
                             },
                             {
                                 id: "04",
-                                title: "ワークショップ形式の楽しいレッスン！！",
+                                title: <>ワークショップ形式の<br />楽しいレッスン！！</>,
                                 icon: Boxes,
                                 color: "bg-orange-50",
                                 iconColor: "text-orange-600",
@@ -148,7 +148,7 @@ export default function RoboDoneContent() {
                             },
                             {
                                 id: "05",
-                                title: "子どもたちでイベントの企画・開催！",
+                                title: <>子どもたちでイベントの<br />企画・開催！</>,
                                 icon: Users,
                                 color: "bg-rose-50",
                                 iconColor: "text-rose-600",
