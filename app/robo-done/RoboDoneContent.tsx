@@ -44,7 +44,7 @@ export default function RoboDoneContent() {
                         transition={{ duration: 0.8 }}
                         className="mx-auto max-w-2xl text-center"
                     >
-                        <TechBadge className="mb-8 px-3 sm:px-6 py-2 text-[10px] sm:text-xs whitespace-nowrap">
+                        <TechBadge className="mb-8 px-2 sm:px-6 py-2 text-[8.5px] sm:text-xs tracking-normal sm:tracking-widest whitespace-nowrap">
                             月9800円〜はじめるLEGOロボット制作×プログラミング教室
                         </TechBadge>
                         <h1 className="text-6xl font-black tracking-tight text-slate-900 sm:text-8xl mb-10 font-serif leading-[1.1]">
