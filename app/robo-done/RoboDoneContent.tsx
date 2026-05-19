@@ -120,7 +120,7 @@ export default function RoboDoneContent() {
                                 icon: Heart,
                                 color: "bg-blue-50",
                                 iconColor: "text-blue-600",
-                                content: <><span className="inline-block">子どもたち自身の「好き」が「学び」に変わる。</span><br className="hidden sm:inline" /><span className="inline-block">学びが活きる「社会」に触れ、</span><br className="hidden sm:inline" /><span className="inline-block">「学ぶ理由」に気づき、</span><br className="hidden sm:inline" /><span className="inline-block">自分で未来を切り拓いていく。</span><br className="hidden sm:inline" /><span className="inline-block">トライ＆エラーを繰り返しながら、</span><br className="hidden sm:inline" /><span className="inline-block">あきらめずにやり抜く力を。</span><br className="hidden sm:inline" /><span className="inline-block">そういう姿が、いま正に社会で</span><br className="hidden sm:inline" /><span className="inline-block">求められている人材ではないでしょうか。</span></>
+                                content: <>子どもたち自身の「好き」が<br />「学び」に変わる。<br />学びが活きる「社会」に触れ、<br />「学ぶ理由」に気づき、<br />自分で未来を切り拓いていく。<br />トライ＆エラーを繰り返しながら、<br />あきらめずにやり抜く力を。<br />そういう姿が、いま正に社会で<br />求められている人材では<br />ないでしょうか。</>
                             },
                             {
                                 id: "02",
@@ -128,7 +128,7 @@ export default function RoboDoneContent() {
                                 icon: Zap,
                                 color: "bg-indigo-50",
                                 iconColor: "text-indigo-600",
-                                content: <><span className="inline-block">従来の文系・理系の一方に偏るのではなく、</span><br className="hidden sm:inline" /><span className="inline-block">両方の素養を持つ人材の育成が求められています。</span><br className="hidden sm:inline" /><span className="inline-block">ロボ団では、理数教育を通じて理数系に強い</span><br className="hidden sm:inline" /><span className="inline-block">子どもを育てるだけでなく、社会へ出ても通用する</span><br className="hidden sm:inline" /><span className="inline-block">「やりきるチカラ」を育んでいきます。</span></>
+                                content: <>従来の文系・理系の一方に<br />偏るのではなく、<br />両方の素養を持つ人材の育成が<br />求められています。<br />ロボ団では、理数教育を通じて<br />理数系に強い子どもを<br />育てるだけでなく、<br />社会へ出ても通用する<br />「やりきるチカラ」を<br />育んでいきます。</>
                             },
                             {
                                 id: "03",
@@ -136,7 +136,7 @@ export default function RoboDoneContent() {
                                 icon: Code2,
                                 color: "bg-emerald-50",
                                 iconColor: "text-emerald-600",
-                                content: <><span className="inline-block">子どもたちに人気のLEGOを使ってロボットを制作。</span><br className="hidden sm:inline" /><span className="inline-block">自分で作ったロボットが自分で考えた</span><br className="hidden sm:inline" /><span className="inline-block">プログラミングで動くと、子どもたちは大興奮！</span><br className="hidden sm:inline" /><span className="inline-block">楽しみながらプログラミング的思考を</span><br className="hidden sm:inline" /><span className="inline-block">身につけることができます。</span></>
+                                content: <>子どもたちに人気のLEGOを使って<br />ロボットを制作。<br />自分で作ったロボットが<br />自分で考えた<br />プログラミングで動くと、<br />子どもたちは大興奮！<br />楽しみながらプログラミング的思考を<br />身につけることができます。</>
                             },
                             {
                                 id: "04",
@@ -144,7 +144,7 @@ export default function RoboDoneContent() {
                                 icon: Boxes,
                                 color: "bg-orange-50",
                                 iconColor: "text-orange-600",
-                                content: <><span className="inline-block">ロボ団ではレッスンの度に</span><br className="hidden sm:inline" /><span className="inline-block">新しいプログラミングに挑戦。</span><br className="hidden sm:inline" /><span className="inline-block">「考えることが楽しい！」</span><br className="hidden sm:inline" /><span className="inline-block">仲間の発言から新しい気づきが</span><br className="hidden sm:inline" /><span className="inline-block">生まれてくるのも魅力のひとつ。</span><br className="hidden sm:inline" /><span className="inline-block">話すのが苦手だった子も、どんどん自分から</span><br className="hidden sm:inline" /><span className="inline-block">発言をしたくなるレッスンなのです。</span></>
+                                content: <>ロボ団ではレッスンの度に<br />新しいプログラミングに挑戦。<br />「考えることが楽しい！」<br />仲間の発言から新しい気づきが<br />生まれてくるのも魅力のひとつ。<br />話すのが苦手だった子も、<br />どんどん自分から発言したくなる<br />レッスンなのです。</>
                             },
                             {
                                 id: "05",
@@ -152,7 +152,7 @@ export default function RoboDoneContent() {
                                 icon: Users,
                                 color: "bg-rose-50",
                                 iconColor: "text-rose-600",
-                                content: <><span className="inline-block">高岡校では、イベントの企画や体験会のアイデアを、</span><br className="hidden sm:inline" /><span className="inline-block">子どもたちと一緒に考えています。</span><br className="hidden sm:inline" /><span className="inline-block">子どもたちが主体となって</span><br className="hidden sm:inline" /><span className="inline-block">地域のみなさんに伝える姿は、</span><br className="hidden sm:inline" /><span className="inline-block">とても頼もしく感じます。</span><br className="hidden sm:inline" /><span className="inline-block">社会の役に立っている。と子どもたちが</span><br className="hidden sm:inline" /><span className="inline-block">感じてもらえる経験を大切にしています。</span></>
+                                content: <>高岡校では、イベントの企画や<br />体験会のアイデアを、<br />子どもたちと一緒に考えています。<br />子どもたちが主体となって<br />地域のみなさんに伝える姿は、<br />とても頼もしく感じます。<br />社会の役に立っている。と<br />子どもたちが感じてもらえる経験を<br />大切にしています。</>
                             }
                         ].map((point, i) => (
                             <motion.div
