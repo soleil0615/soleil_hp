@@ -11,13 +11,10 @@ interface TrialSession {
 }
 
 const sessions: TrialSession[] = [
-    // February 2026
-    { date: "2026-02-07", time: "11:00 - 12:30", description: "プログラミング体験会" },
-    { date: "2026-02-08", time: "14:00 - 15:30", description: "プログラミング体験会" },
-    { date: "2026-02-14", time: "11:00 - 12:30", description: "プログラミング体験会" },
-    { date: "2026-02-15", time: "14:00 - 15:30", description: "プログラミング体験会" },
-    { date: "2026-02-21", time: "11:00 - 12:30", description: "プログラミング体験会" },
-    { date: "2026-02-28", time: "11:00 - 12:30", description: "プログラミング体験会" },
+    // May 2026
+    { date: "2026-05-17", time: "14:00 - 15:30", description: "プログラミング体験会" },
+    { date: "2026-05-24", time: "14:00 - 15:30", description: "プログラミング体験会" },
+    { date: "2026-05-31", time: "14:00 - 15:30", description: "プログラミング体験会" },
 ];
 
 interface TrialCalendarProps {
@@ -26,7 +23,7 @@ interface TrialCalendarProps {
 }
 
 export default function TrialCalendar({ onSelectSession, selectedDate }: TrialCalendarProps) {
-    const [currentDate, setCurrentDate] = useState(new Date(2026, 1)); // Feb 2026
+    const [currentDate, setCurrentDate] = useState(new Date(2026, 4)); // May 2026
 
     const daysInMonth = (year: number, month: number) => new Date(year, month + 1, 0).getDate();
     const firstDayOfMonth = (year: number, month: number) => new Date(year, month, 1).getDay();
