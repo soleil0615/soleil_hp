@@ -16,19 +16,28 @@ export default function Hero() {
             </div>
 
             <div className="relative mx-auto max-w-7xl px-6 py-20 sm:py-48 lg:py-56 flex flex-col items-center justify-center min-h-[80vh] z-10">
-                <FadeIn delay={0.2} className="text-center w-full max-w-3xl">
-                    <h1 className="text-3xl font-bold tracking-[0.05em] text-foreground sm:text-6xl sm:tracking-[0.12em] font-serif text-balance leading-[1.4] sm:leading-[1.2]">
-                        <span className="inline-block">働く女性</span><span className="hidden sm:inline">　</span><br className="sm:hidden" /><span className="inline-block">育ち盛りの子どもの</span><br className="hidden sm:block" /><span className="inline-block">「自律」を応援します</span>
+                <FadeIn delay={0.2} className="text-center w-full max-w-4xl">
+                    <div className="mb-6 flex justify-center">
+                        <span className="inline-flex items-center rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary ring-1 ring-inset ring-primary/20 whitespace-nowrap">
+                            富山県高岡市 | ロボットプログラミング教室・企業研修
+                        </span>
+                    </div>
+                    <h1 className="text-3xl font-bold tracking-[0.05em] text-foreground sm:text-5xl lg:text-6xl sm:tracking-[0.12em] font-serif text-balance leading-[1.4] sm:leading-[1.2]">
+                        <span className="inline-block">働く女性と</span><span className="hidden sm:inline">　</span><br className="sm:hidden" /><span className="inline-block">育ち盛りの子どもの</span><br className="hidden sm:block" /><span className="inline-block">「自律」を応援します</span>
                     </h1>
-                    <p className="mt-6 text-base leading-relaxed text-muted-foreground/80 mx-auto text-balance font-light sm:text-lg sm:mt-8 px-4">
-                        ル・ソレイユは<span className="inline-block">「太陽の様に周りを照らす人」</span>という<span className="inline-block">意味が込められています。</span><br className="hidden sm:block" />
-                        <span className="inline-block">自分で考え、行動し、</span><span className="inline-block">自分らしくいられる。</span><br className="hidden sm:block" />
-                        <span className="inline-block">そんな子どもたちと、</span><span className="inline-block">輝く女性をサポートします。</span>
+                    <p className="mt-6 text-base leading-relaxed text-muted-foreground/90 mx-auto text-balance font-light sm:text-lg sm:mt-8 px-4 max-w-2xl">
+                        株式会社ル・ソレイユは、<strong className="font-semibold text-foreground">ロボット制作プログラミング教室「ロボ団高岡校」</strong>の運営と、<strong className="font-semibold text-foreground">企業向け人材育成コンサルティング</strong>を通じて、自分で考え行動できる「自律した人・組織づくり」をサポートします。
                     </p>
-                    <div className="mt-12 flex items-center justify-center gap-x-6">
+                    <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+                        <Link
+                            href="#service"
+                            className="rounded-full bg-primary/90 px-8 py-3.5 text-sm font-semibold text-white shadow-lg shadow-primary/20 hover:bg-primary transition-all hover:-translate-y-0.5 w-full sm:w-auto"
+                        >
+                            事業内容を見る
+                        </Link>
                         <Link
                             href="#contact"
-                            className="rounded-full bg-primary/80 px-8 py-3.5 text-sm font-semibold text-white shadow-lg shadow-primary/20 hover:bg-primary transition-all hover:-translate-y-0.5"
+                            className="rounded-full bg-white px-8 py-3.5 text-sm font-semibold text-foreground shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 transition-all hover:-translate-y-0.5 w-full sm:w-auto"
                         >
                             お問い合わせ
                         </Link>
