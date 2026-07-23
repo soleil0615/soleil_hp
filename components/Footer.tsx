@@ -39,6 +39,16 @@ export default function Footer() {
                                     お問い合わせフォーム
                                 </Link>
                             </li>
+                            <li>
+                                <Link href="/privacy" className="text-sm leading-6 text-muted-foreground hover:text-primary">
+                                    プライバシーポリシー
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/terms" className="text-sm leading-6 text-muted-foreground hover:text-primary">
+                                    利用規約
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                 </div>
