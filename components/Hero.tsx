@@ -29,11 +29,15 @@ export default function Hero() {
                     </h1>
                     <p className="mt-6 text-base leading-relaxed text-muted-foreground/90 mx-auto font-light sm:text-lg sm:mt-8 px-4 max-w-3xl">
                         <span className="inline-block">株式会社ル・ソレイユは、</span>
-                        <span className="inline-block"><strong className="font-semibold text-foreground">ロボット制作プログラミング教室「ロボ団高岡校」</strong>の運営と、</span>
+                        <span className="inline-block"><strong className="font-semibold text-foreground">ロボット制作プログラミング教室</strong></span>
+                        <span className="inline-block"><strong className="font-semibold text-foreground">「ロボ団高岡校」</strong>の運営と、</span>
                         <br className="hidden md:inline" />
-                        <span className="inline-block"><strong className="font-semibold text-foreground">企業向け人材育成コンサルティング</strong>を通じて、</span>
+                        <span className="inline-block"><strong className="font-semibold text-foreground">企業向け人材育成</strong></span>
+                        <span className="inline-block"><strong className="font-semibold text-foreground">コンサルティング</strong>を通じて、</span>
                         <br className="hidden sm:inline" />
-                        <span className="inline-block">自分で考え行動できる「自律した人・組織づくり」をサポートします。</span>
+                        <span className="inline-block">自分で考え行動できる</span>
+                        <span className="inline-block">「自律した人・組織づくり」</span>
+                        <span className="inline-block">をサポートします。</span>
                     </p>
                     <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
                         <Link
