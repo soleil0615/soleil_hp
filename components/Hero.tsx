@@ -18,12 +18,14 @@ export default function Hero() {
             <div className="relative mx-auto max-w-7xl px-6 py-20 sm:py-48 lg:py-56 flex flex-col items-center justify-center min-h-[80vh] z-10">
                 <FadeIn delay={0.2} className="text-center w-full max-w-4xl">
                     <div className="mb-6 flex justify-center">
-                        <span className="inline-flex items-center rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary ring-1 ring-inset ring-primary/20 whitespace-nowrap">
-                            富山県高岡市 | ロボットプログラミング教室・企業研修
+                        <span className="inline-flex flex-col sm:flex-row items-center gap-0.5 sm:gap-1.5 rounded-2xl sm:rounded-full bg-primary/10 px-4 py-1.5 text-xs sm:text-sm font-medium text-primary ring-1 ring-inset ring-primary/20 text-center whitespace-nowrap">
+                            <span>富山県高岡市</span>
+                            <span className="hidden sm:inline">|</span>
+                            <span>ロボットプログラミング教室・企業研修</span>
                         </span>
                     </div>
                     <h1 className="text-3xl font-bold tracking-[0.05em] text-foreground sm:text-5xl lg:text-6xl sm:tracking-[0.12em] font-serif text-balance leading-[1.4] sm:leading-[1.2]">
-                        <span className="inline-block">働く女性と</span><span className="hidden sm:inline">　</span><br className="sm:hidden" /><span className="inline-block">育ち盛りの子どもの</span><br className="hidden sm:block" /><span className="inline-block">「自律」を応援します</span>
+                        <span className="inline-block">働く女性と</span><span className="hidden sm:inline">　</span><br className="sm:hidden" /><span className="inline-block">育ち盛りの子どもの</span><br className="hidden sm:block" /><span className="inline-block">「自律」を</span><br className="sm:hidden" /><span className="inline-block">応援します</span>
                     </h1>
                     <p className="mt-6 text-base leading-relaxed text-muted-foreground/90 mx-auto font-light sm:text-lg sm:mt-8 px-4 max-w-3xl">
                         <span className="inline-block">株式会社ル・ソレイユは、</span>
