@@ -24,6 +24,7 @@ export default function TrialRegistrationForm({ selectedSession }: TrialRegistra
         sessionDate: "",
         sessionTime: "",
     });
+    const [honeypot, setHoneypot] = useState("");
 
     useEffect(() => {
         if (selectedSession) {
@@ -47,6 +48,13 @@ export default function TrialRegistrationForm({ selectedSession }: TrialRegistra
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+
+        // Honeypot: bots tend to fill every field, humans never see this one.
+        if (honeypot) {
+            setStatus("success");
+            return;
+        }
+
         setStatus("loading");
         setErrorMessage("");
 
@@ -133,6 +141,20 @@ export default function TrialRegistrationForm({ selectedSession }: TrialRegistra
             </AnimatePresence>
 
             <form onSubmit={handleSubmit} className="space-y-8">
+                {/* Honeypot field: hidden from humans via CSS, bots fill it in blindly */}
+                <div className="absolute left-[-9999px] top-auto w-px h-px overflow-hidden" aria-hidden="true">
+                    <label htmlFor="website">Website</label>
+                    <input
+                        type="text"
+                        name="website"
+                        id="website"
+                        tabIndex={-1}
+                        autoComplete="off"
+                        value={honeypot}
+                        onChange={(e) => setHoneypot(e.target.value)}
+                    />
+                </div>
+
                 <div className="grid grid-cols-1 gap-y-8 sm:grid-cols-2 sm:gap-x-8">
                     {/* Selected Session Info */}
                     <div className="sm:col-span-2">

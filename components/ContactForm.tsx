@@ -11,6 +11,7 @@ export default function ContactForm({ initialMessage = "" }: { initialMessage?: 
         phone: "",
         message: initialMessage,
     });
+    const [honeypot, setHoneypot] = useState("");
 
     useEffect(() => {
         if (initialMessage) {
@@ -30,6 +31,13 @@ export default function ContactForm({ initialMessage = "" }: { initialMessage?: 
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+
+        // Honeypot: bots tend to fill every field, humans never see this one.
+        if (honeypot) {
+            setStatus("success");
+            return;
+        }
+
         setStatus("loading");
         setErrorMessage("");
 
@@ -95,6 +103,20 @@ export default function ContactForm({ initialMessage = "" }: { initialMessage?: 
     return (
         <div className="bg-white px-5 py-8 sm:px-12 lg:px-16 rounded-2xl shadow-sm ring-1 ring-gray-900/5">
             <form onSubmit={handleSubmit} className="mx-auto max-w-xl">
+                {/* Honeypot field: hidden from humans via CSS, bots fill it in blindly */}
+                <div className="absolute left-[-9999px] top-auto w-px h-px overflow-hidden" aria-hidden="true">
+                    <label htmlFor="website">Website</label>
+                    <input
+                        type="text"
+                        name="website"
+                        id="website"
+                        tabIndex={-1}
+                        autoComplete="off"
+                        value={honeypot}
+                        onChange={(e) => setHoneypot(e.target.value)}
+                    />
+                </div>
+
                 <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                     <div className="sm:col-span-2">
                         <label
