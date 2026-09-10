@@ -67,8 +67,8 @@
   --color-edu-cta-hover: var(--edu-cta-hover);
 
   /* Fonts */
-  --font-sans: 'Noto Sans JP', sans-serif;
-  --font-serif: 'Noto Serif JP', serif;
+  --font-sans: var(--font-noto-sans-jp), sans-serif;
+  --font-serif: var(--font-noto-serif-jp), serif;
 }
 
 html, body {

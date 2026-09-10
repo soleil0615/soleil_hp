@@ -1,7 +1,6 @@
 import Hero from "@/components/Hero";
 import Section from "@/components/Section";
 import ServiceCard from "@/components/ServiceCard";
-import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
 import roboImage from "../public/S__2080777.jpg";
 import trainingImage from "../public/corporate_training.png";

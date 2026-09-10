@@ -5,13 +5,13 @@ import Section from "@/components/Section";
 import Link from "next/link";
 import Image from "next/image";
 import roboImage from "../../public/S__2080777.jpg";
-import { TechGrid, FloatingCircuit, GlowOrb, TechBadge } from "@/components/RoboTechDecorations";
+import { TechGrid, FloatingCircuit, TechBadge } from "@/components/RoboTechDecorations";
 import DecorativeBlob from "@/components/DecorativeBlob";
 import TrialCalendar from "@/components/TrialCalendar";
 import TrialRegistrationForm from "@/components/TrialRegistrationForm";
 import ContactForm from "@/components/ContactForm";
 import { motion } from "framer-motion";
-import { Boxes, Handshake, Code2, Smile, Heart, Zap, Users, Map, ExternalLink } from "lucide-react";
+import { Boxes, Code2, Smile, Heart, Zap, Users, Map, ExternalLink } from "lucide-react";
 
 export default function RoboDoneContent() {
     const [selectedSession, setSelectedSession] = useState<{ date: string; time: string; description: string } | null>(null);

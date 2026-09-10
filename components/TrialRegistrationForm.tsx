@@ -91,10 +91,10 @@ export default function TrialRegistrationForm({ selectedSession }: TrialRegistra
                 sessionDate: "",
                 sessionTime: "",
             });
-        } catch (error: any) {
+        } catch (error) {
             console.error("Submission error:", error);
             setStatus("error");
-            setErrorMessage(error.message || "予期せぬエラーが発生しました。");
+            setErrorMessage(error instanceof Error ? error.message : "予期せぬエラーが発生しました。");
         }
     };
 
