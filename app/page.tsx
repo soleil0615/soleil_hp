@@ -30,8 +30,8 @@ export default function Home() {
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "株式会社ル・ソレイユ",
-              "url": "https://le-soleil0615.com",
-              "logo": "https://le-soleil0615.com/soleil-logo.jpg",
+              "url": "https://www.le-soleil0615.com",
+              "logo": "https://www.le-soleil0615.com/soleil-logo.jpg",
               "contactPoint": {
                 "@type": "ContactPoint",
                 "telephone": "+81-766-75-8314",
@@ -50,9 +50,9 @@ export default function Home() {
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               "name": "株式会社ル・ソレイユ",
-              "image": "https://le-soleil0615.com/soleil-logo.jpg",
-              "@id": "https://le-soleil0615.com",
-              "url": "https://le-soleil0615.com",
+              "image": "https://www.le-soleil0615.com/soleil-logo.jpg",
+              "@id": "https://www.le-soleil0615.com",
+              "url": "https://www.le-soleil0615.com",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "御旅屋町1222 エルパセオ1階",
@@ -84,7 +84,7 @@ export default function Home() {
               "@context": "https://schema.org",
               "@type": "WebSite",
               "name": "株式会社ル・ソレイユ",
-              "url": "https://le-soleil0615.com"
+              "url": "https://www.le-soleil0615.com"
             }
           ])
         }}

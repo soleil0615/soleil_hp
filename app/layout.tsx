@@ -18,7 +18,7 @@ const notoSerifJP = Noto_Serif_JP({
   display: "swap",
 });
 
-const baseUrl = "https://le-soleil0615.com";
+const baseUrl = "https://www.le-soleil0615.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),

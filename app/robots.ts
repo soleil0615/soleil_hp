@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: "/",
             disallow: "/api/",
         },
-        sitemap: "https://le-soleil0615.com/sitemap.xml",
+        sitemap: "https://www.le-soleil0615.com/sitemap.xml",
     };
 }

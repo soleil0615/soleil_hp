@@ -110,7 +110,7 @@ export default function Header() {
           </div>
         </div>
         <div className="absolute bottom-10 left-6 right-6 text-center">
-          <p className="text-sm text-muted-foreground font-light">© 2026 Le Soleil. All rights reserved.</p>
+          <p className="text-sm text-muted-foreground font-light">© {new Date().getFullYear()} Le Soleil. All rights reserved.</p>
         </div>
       </div>
     </>
