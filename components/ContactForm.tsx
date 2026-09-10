@@ -9,6 +9,7 @@ export default function ContactForm({ initialMessage = "" }: { initialMessage?: 
         name: "",
         email: "",
         phone: "",
+        inquiryType: "",
         message: initialMessage,
     });
     const [honeypot, setHoneypot] = useState("");
@@ -23,7 +24,7 @@ export default function ContactForm({ initialMessage = "" }: { initialMessage?: 
     const [errorMessage, setErrorMessage] = useState("");
 
     const handleChange = (
-        e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+        e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
     ) => {
         const { name, value } = e.target;
         setFormData((prev) => ({ ...prev, [name]: value }));
@@ -46,6 +47,7 @@ export default function ContactForm({ initialMessage = "" }: { initialMessage?: 
             formDataToSubmit.append("name", formData.name);
             formDataToSubmit.append("email", formData.email);
             formDataToSubmit.append("phone", formData.phone);
+            formDataToSubmit.append("inquiryType", formData.inquiryType);
             formDataToSubmit.append("message", formData.message);
 
             const response = await fetch("https://ssgform.com/s/42cUaxkcIdW2", {
@@ -64,6 +66,7 @@ export default function ContactForm({ initialMessage = "" }: { initialMessage?: 
                 name: "",
                 email: "",
                 phone: "",
+                inquiryType: "",
                 message: "",
             });
         } catch (error) {
@@ -178,6 +181,33 @@ export default function ContactForm({ initialMessage = "" }: { initialMessage?: 
                                 className="block w-full rounded-md border-0 px-3.5 py-2 text-foreground shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6"
                             />
                         </div>
+                    </div>
+
+                    <div className="sm:col-span-2">
+                        <label
+                            htmlFor="inquiryType"
+                            className="block text-sm font-semibold leading-6 text-foreground"
+                        >
+                            お問い合わせ種別 <span className="text-red-500">*</span>
+                        </label>
+                        <div className="mt-2.5">
+                            <select
+                                name="inquiryType"
+                                id="inquiryType"
+                                required
+                                value={formData.inquiryType}
+                                onChange={handleChange}
+                                className="block w-full rounded-md border-0 px-3.5 py-2 text-foreground shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6"
+                            >
+                                <option value="">選択してください</option>
+                                <option value="ロボ団高岡校について">ロボ団高岡校について</option>
+                                <option value="人材育成コンサルティングについて">人材育成コンサルティングについて</option>
+                                <option value="その他">その他のご質問</option>
+                            </select>
+                        </div>
+                        <p className="mt-2 text-xs text-muted-foreground">
+                            ※誠に恐れ入りますが、営業・広告目的のご連絡はご遠慮いただいております。
+                        </p>
                     </div>
 
                     <div className="sm:col-span-2">
