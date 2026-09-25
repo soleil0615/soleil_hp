@@ -29,6 +29,11 @@ export default function Footer() {
                                     人材育成コンサルティング
                                 </Link>
                             </li>
+                            <li>
+                                <Link href="/regional" className="text-sm leading-6 text-muted-foreground hover:text-primary">
+                                    地域活性化アドバイザー
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                     <div>

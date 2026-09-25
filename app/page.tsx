@@ -4,6 +4,7 @@ import ServiceCard from "@/components/ServiceCard";
 import ContactForm from "@/components/ContactForm";
 import roboImage from "../public/S__2080777.jpg";
 import trainingImage from "../public/corporate_training.png";
+import regionalImage from "../public/programming_event_casual.jpg";
 import DecorativeBlob from "@/components/DecorativeBlob";
 import companyInterior from "../public/ソレイユ内観（イラスト）.png";
 import companyExterior from "../public/ソレイユ外観（イラスト）.png";
@@ -130,6 +131,16 @@ export default function Home() {
               imageSrc={trainingImage}
               imagePosition="object-[50%_25%]"
             />
+            <div className="md:col-span-2">
+              <ServiceCard
+                title="地域活性化アドバイザー"
+                altText="地域活性化アドバイザーとしての教育プログラムの様子"
+                description="学校・企業・行政・地域をつなぎ、「人材」と「つながり」を育てます。地域課題×DXの探究学習やキャリア教育、産官学連携の推進を伴走支援します。"
+                href="/regional"
+                imageSrc={regionalImage}
+                imagePosition="object-center"
+              />
+            </div>
           </div>
         </FadeIn>
       </Section>
@@ -158,7 +169,8 @@ export default function Home() {
                 <dd className="mt-1 text-sm leading-6 text-muted-foreground sm:col-span-2 sm:mt-0">
 
                   ロボット制作プログラミング教室ロボ団高岡校<br />
-                  人材育成コンサルティング
+                  人材育成コンサルティング<br />
+                  地域活性化アドバイザー
                 </dd>
               </div>
               <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">

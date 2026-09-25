@@ -11,6 +11,7 @@ const navigation = [
   { name: "ホーム", href: "/" },
   { name: "ロボ団", href: "/robo-done" },
   { name: "人材育成事業", href: "/edu" },
+  { name: "地域活性化", href: "/regional" },
   { name: "会社概要", href: "/#company" },
   { name: "お問い合わせ", href: "/#contact" },
 ];
