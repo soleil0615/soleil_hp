@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "地域活性化アドバイザー | 株式会社ル・ソレイユ",
+    title: "地域活性化アドバイザー",
     description:
         "学校・企業・行政・地域をつなぎ、教育・人材育成・組織開発の視点から地域の人づくりを支援します。地域課題×DXの探究学習、キャリア教育、企業研修まで一貫して伴走します。",
     keywords: [
@@ -43,35 +43,36 @@ const targets = [
     { icon: Home, label: "地域・住民" },
 ];
 
+// 各要素は「文節」の配列。スマホでは文節単位で改行されるようにする。
 const specialties = [
-    "地域人材の育成・教育",
-    "中高生向けDX・デジタル人材の育成",
-    "プログラミング・AI・ICT教育",
-    "学校・企業・行政の連携推進",
-    "地元企業と学校をつなぐキャリア教育",
-    "地域課題の解決に向けた学びや若者の地域参画",
-    "地元企業の人材育成・組織開発",
-    "産官学連携・官民連携の推進",
-    "コミュニティづくり",
-    "ロボット・eスポーツなどを活用した人材育成",
+    ["地域人材の育成・教育"],
+    ["中高生向けDX・", "デジタル人材の育成"],
+    ["プログラミング・AI・", "ICT教育"],
+    ["学校・企業・行政の", "連携推進"],
+    ["地元企業と学校をつなぐ", "キャリア教育"],
+    ["地域課題の解決に向けた学びや", "若者の地域参画"],
+    ["地元企業の人材育成・", "組織開発"],
+    ["産官学連携・", "官民連携の推進"],
+    ["コミュニティづくり"],
+    ["ロボット・eスポーツなどを", "活用した人材育成"],
 ];
 
 const achievements = [
     {
-        title: "中高生向けDX・プログラミング教育の実施",
-        body: "学校現場や放課後活動にて、プログラミング・AI・ICT教育の授業やワークショップを実施しています。",
+        title: ["中高生向けDX・", "プログラミング教育の実施"],
+        body: ["学校現場や放課後活動にて、", "プログラミング・AI・ICT教育の", "授業やワークショップを", "実施しています。"],
     },
     {
-        title: "自治体・学校・企業をつなぐ教育プログラムの提供",
-        body: "地域課題の解決をテーマにした学びの場づくりや、キャリア教育プログラムを展開しています。",
+        title: ["自治体・学校・企業をつなぐ", "教育プログラムの提供"],
+        body: ["地域課題の解決をテーマにした", "学びの場づくりや、", "キャリア教育プログラムを", "展開しています。"],
     },
     {
-        title: "地元企業の人材育成・組織開発支援",
-        body: "研修設計や伴走支援を通じて、企業の人材力向上と組織の持続的な成長を支援しています。",
+        title: ["地元企業の人材育成・", "組織開発支援"],
+        body: ["研修設計や伴走支援を通じて、", "企業の人材力向上と", "組織の持続的な成長を", "支援しています。"],
     },
     {
-        title: "ロボット・eスポーツ等を活用した人材育成",
-        body: "テクノロジーやeスポーツを通じて、挑戦する力・チームワーク・創造力を育む場を提供しています。",
+        title: ["ロボット・eスポーツ等を", "活用した人材育成"],
+        body: ["テクノロジーやeスポーツを通じて、", "挑戦する力・チームワーク・創造力を", "育む場を提供しています。"],
     },
 ];
 
@@ -118,7 +119,7 @@ export default function RegionalPage() {
 
                             <Link
                                 href="/#contact"
-                                className="mt-12 w-full sm:w-auto px-10 py-4 bg-slate-800 text-white font-bold rounded-full shadow-lg hover:bg-slate-700 transition-all flex items-center justify-center gap-2 group"
+                                className="mt-12 w-full sm:w-auto px-6 sm:px-10 py-4 bg-slate-800 text-white text-sm sm:text-base font-bold whitespace-nowrap rounded-full shadow-lg hover:bg-slate-700 transition-all flex items-center justify-center gap-2 group"
                             >
                                 <Mail className="w-5 h-5 group-hover:scale-110 transition-transform" />
                                 ご相談・お問い合わせ
@@ -142,12 +143,18 @@ export default function RegionalPage() {
                         <span className="inline-block">持続可能な地域づくりに取り組んでいます。</span>
                     </p>
                     <div className="mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-1">
-                        {specialties.map((item, i) => (
-                            <div key={item} className="flex items-start gap-4 border-b border-dashed border-slate-200 py-4">
+                        {specialties.map((parts, i) => (
+                            <div key={parts.join("")} className="flex items-start gap-4 border-b border-dashed border-slate-200 py-4">
                                 <span className="font-serif text-lg font-bold text-teal-600 tabular-nums shrink-0">
                                     {String(i + 1).padStart(2, "0")}
                                 </span>
-                                <span className="text-sm sm:text-base font-bold text-slate-700 leading-relaxed">{item}</span>
+                                <span className="text-sm sm:text-base font-bold text-slate-700 leading-relaxed">
+                                    {parts.map((part) => (
+                                        <span key={part} className="inline-block">
+                                            {part}
+                                        </span>
+                                    ))}
+                                </span>
                             </div>
                         ))}
                     </div>
@@ -160,11 +167,23 @@ export default function RegionalPage() {
                     <div className="mx-auto max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-6">
                         {achievements.map((item) => (
                             <div
-                                key={item.title}
+                                key={item.title.join("")}
                                 className="rounded-2xl bg-slate-50 border border-slate-100 p-6 sm:p-8 hover:shadow-md transition-shadow"
                             >
-                                <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-3">{item.title}</h3>
-                                <p className="text-sm leading-7 text-slate-600">{item.body}</p>
+                                <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-3">
+                                    {item.title.map((part) => (
+                                        <span key={part} className="inline-block">
+                                            {part}
+                                        </span>
+                                    ))}
+                                </h3>
+                                <p className="text-sm leading-7 text-slate-600">
+                                    {item.body.map((part) => (
+                                        <span key={part} className="inline-block">
+                                            {part}
+                                        </span>
+                                    ))}
+                                </p>
                             </div>
                         ))}
                     </div>
@@ -182,7 +201,8 @@ export default function RegionalPage() {
                             <span className="inline-block">若者のチャレンジを後押しし、</span>
                             <span className="inline-block">地域企業も巻き込むことで、</span>
                             <span className="inline-block">人材が地域で育ち、</span>
-                            <span className="inline-block">地域で活躍していく仕組みをつくります。</span>
+                            <span className="inline-block">地域で活躍していく</span>
+                            <span className="inline-block">仕組みをつくります。</span>
                         </p>
                         <p className="mt-8 text-center font-serif text-lg sm:text-2xl font-bold text-slate-900 leading-relaxed">
                             学校 × 地域企業 × 行政 <br className="sm:hidden" />× 地域住民 × 若者
@@ -196,14 +216,16 @@ export default function RegionalPage() {
                 <FadeIn delay={0.2}>
                     <div className="mx-auto max-w-3xl text-center">
                         <p className="font-serif text-lg sm:text-3xl font-bold text-orange-500 mb-10 leading-relaxed">
-                            『地域の中に、人を育てる仕組みが残ること』
+                            <span className="inline-block">『地域の中に、</span>
+                            <span className="inline-block">人を育てる仕組みが残ること』</span>
                         </p>
                         <div className="rounded-2xl bg-slate-50 border border-slate-100 p-6 sm:p-10">
                             <p className="text-sm sm:text-base leading-8 sm:leading-9 text-slate-700">
                                 <span className="inline-block">中学生が高校生になり、</span>
                                 <span className="inline-block">高校生が大学生・社会人になり、</span>
                                 <span className="inline-block">社会人になった人が、</span>
-                                <span className="inline-block">今度は地域の子どもたちを支える側になる。</span>
+                                <span className="inline-block">今度は地域の子どもたちを</span>
+                                <span className="inline-block">支える側になる。</span>
                             </p>
                             <p className="mt-6 text-sm sm:text-base leading-8 sm:leading-9 text-slate-700">
                                 <span className="inline-block">その循環が生まれれば、</span>
@@ -229,8 +251,10 @@ export default function RegionalPage() {
                         </p>
                         <p className="mt-6 text-sm sm:text-lg leading-8 sm:leading-10 text-slate-700 font-medium">
                             <span className="inline-block">その地域で、</span>
-                            <span className="inline-block">「やってみたい」と思える子どもが育つこと。</span>
-                            <span className="inline-block">「応援したい」と思える大人が増えること。</span>
+                            <span className="inline-block">「やってみたい」と思える</span>
+                            <span className="inline-block">子どもが育つこと。</span>
+                            <span className="inline-block">「応援したい」と思える</span>
+                            <span className="inline-block">大人が増えること。</span>
                             <span className="inline-block">「この地域で挑戦したい」と思える</span>
                             <span className="inline-block">若者が増えること。</span>
                         </p>
@@ -258,7 +282,7 @@ export default function RegionalPage() {
                             </p>
                             <Link
                                 href="/#contact"
-                                className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-slate-800 px-10 py-4 font-bold text-white shadow-lg hover:bg-slate-700 transition-all group"
+                                className="mt-8 inline-flex w-full sm:w-auto items-center justify-center gap-2 whitespace-nowrap rounded-full bg-slate-800 px-6 sm:px-10 py-4 text-sm sm:text-base font-bold text-white shadow-lg hover:bg-slate-700 transition-all group"
                             >
                                 <Mail className="w-5 h-5 group-hover:scale-110 transition-transform" />
                                 お問い合わせフォームへ
