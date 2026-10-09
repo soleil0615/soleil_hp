@@ -1,0 +1,6 @@
+# Xserver用: HTTPSへ統一し、存在しないURLはNext.jsの404ページを表示
+RewriteEngine On
+RewriteCond %{HTTPS} !on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+ErrorDocument 404 /404.html
