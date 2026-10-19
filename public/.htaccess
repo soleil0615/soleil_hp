@@ -1,6 +1,10 @@
+SetEnvIf Request_URI ".*" Ngx_Cache_NoCacheMode=off
+SetEnvIf Request_URI ".*" Ngx_Cache_AllCacheMode
+
 # Xserver用: HTTPSへ統一し、存在しないURLはNext.jsの404ページを表示
 RewriteEngine On
 RewriteCond %{HTTPS} !on
+RewriteCond %{REQUEST_URI} !^/.well-known/acme-challenge/
 RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
 
 ErrorDocument 404 /404.html
