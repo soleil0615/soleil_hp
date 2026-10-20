@@ -1,3 +1,24 @@
+# ホスティング：Xserver（Vercel は使わない）
+
+> **このサイトは Vercel ではなく Xserver（sv10860 / サーバーID mons）で公開する。**
+> 2026/10/19 に Vercel から移行し、Vercel の有料プランは解約済み。
+> GitHub に push しても、サイトは自動では更新されない。
+
+- 状態：公開中 https://le-soleil0615.com/
+- 作業ブランチ：`xserver-static`
+- 静的書き出し：`next.config.ts` の `output: "export"`（サーバー機能・API Routes・画像最適化は使えない）
+
+## 公開のしかた
+
+```bash
+# C:\Users\lesol\AI_Project で実行
+bash deploy-xserver.sh soleil le-soleil0615.com
+```
+
+書き出し（`next build` → `out/`）と、Xserver の `~/le-soleil0615.com/public_html` へのアップロードを自動で行う。
+
+---
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -28,9 +49,3 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
